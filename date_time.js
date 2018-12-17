@@ -6,7 +6,7 @@ function date_time(id)
         months = new Array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
         d = date.getDate();
         day = date.getDay();
-        days = new Array('Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado');
+        days = new Array('Domingo', 'Lunes', 'Martes', 'MiÃ©rcoles', 'Jueves', 'Viernes', 'SÃ¡bado');
 	h = date.getHours();
         if(h<10)
         {
@@ -231,8 +231,8 @@ var j=0;
 
 	document.getElementById(id).innerHTML = fecha+'</br>'
 						+hora+'</br>'
-						+'Próximo tren de Lacroze a Lynch: '+toLynchLunVier[i]+'</br>'
-						+'Próximo tren de Lynch a Lacroze: '+toLacLunVier[j]+'</br>';
+						+'Proximo tren de Lacroze a Lynch: '+toLynchLunVier[i]+'</br>'
+						+'Proximo tren de Lynch a Lacroze: '+toLacLunVier[j]+'</br>';
         setTimeout('date_time("'+id+'");','1000');
         return true;
 }
