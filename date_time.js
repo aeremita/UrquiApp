@@ -118,12 +118,13 @@ function date_time(id)
 "22:20:00",
 "22:40:00",
 "23:06:00",
-"23:50:00",
+"23:50:00"
 
 );        
 
 toLacLunVier = new Array (
 
+"00:34:00",
 "01:35:00",
 "03:05:00",
 "04:20:00",
@@ -215,8 +216,7 @@ toLacLunVier = new Array (
 "22:48:00",
 "23:08:00",
 "23:28:00",
-"23:56:00",
-"00:34:00"
+"23:56:00"
 );
 
 var i=0;
@@ -229,10 +229,10 @@ var j=0;
 	while (is_a_less_than_b(toLacLunVier[j],hora))
 	 j++;
 
-	document.getElementById(id).innerHTML = fecha+'</br>'
-						+hora+'</br>'
-						+'Proximo tren de Lacroze a Lynch: '+toLynchLunVier[i]+'</br>'
-						+'Proximo tren de Lynch a Lacroze: '+toLacLunVier[j]+'</br>';
+	document.getElementById("fecha_actual").innerHTML = fecha+'</br>'
+						+hora+'</br>';
+	document.getElementById(id).innerHTML = 'Próximo tren de Lacroze a Lynch: '+toLynchLunVier[i%(toLynchLunVier.length)]+' <p id="peque">(Siguiente: '+toLynchLunVier[(i+1)%(toLynchLunVier.length)]+')</p></br>'
+						+'Próximo tren de Lynch a Lacroze: '+toLacLunVier[j%(toLacLunVier.length)]+' <p id="peque">(Siguiente: '+toLacLunVier[(j+1)%(toLacLunVier.length)]+')</p></br>';
         setTimeout('date_time("'+id+'");','1000');
         return true;
 }
