@@ -231,8 +231,8 @@ var j=0;
 
 	document.getElementById("fecha_actual").innerHTML = fecha+'</br>'
 						+hora+'</br>';
-	document.getElementById(id).innerHTML = 'Próximo tren de Lacroze a Lynch: '+toLynchLunVier[i%(toLynchLunVier.length)]+' <p id="peque">(Siguiente: '+toLynchLunVier[(i+1)%(toLynchLunVier.length)]+')</p></br>'
-						+'Próximo tren de Lynch a Lacroze: '+toLacLunVier[j%(toLacLunVier.length)]+' <p id="peque">(Siguiente: '+toLacLunVier[(j+1)%(toLacLunVier.length)]+')</p></br>';
+	document.getElementById(id).innerHTML = 'Proximo tren de Lacroze a Lynch: '+toLynchLunVier[i%(toLynchLunVier.length)]+' <p id="peque">(Siguiente: '+toLynchLunVier[(i+1)%(toLynchLunVier.length)]+')</p></br>'
+						+'Proximo tren de Lynch a Lacroze: '+toLacLunVier[j%(toLacLunVier.length)]+' <p id="peque">(Siguiente: '+toLacLunVier[(j+1)%(toLacLunVier.length)]+')</p></br>';
         setTimeout('date_time("'+id+'");','1000');
         return true;
 }
