@@ -3,16 +3,25 @@
     <head>
         <meta charset="ISO-8859-1">
         <style>
-            body {background-color: powderblue;}
-            h1   {color: blue;}
+            body {background-color: lightseagreen;
+		  font-family: "Lucida Console", Monaco, monospace;}
+            #titulo   {color: navy;
+		white-space: nowrap;
+		font-size: 50px;
+font-variant: small-caps;}
+ 	    #fecha_actual {color: indigo;}
+	    #peque {font-size: 14px;}
         </style>
         <title>HORARIOS TREN URQUIZA</title>
         <script type="text/javascript" src="date_time.js"></script>
     </head>
     <body>
-        <h1> UrquiApp &nbsp;</h1>
-        <img src="https://www.logolynx.com/images/logolynx/af/af1312d4a873b69ffbd9597b78a14703.png">
-           // <span id="date_time"></span>
-           // <script type="text/javascript">window.onload = date_time('date_time');</script>
+        <span id="titulo"> UrquiApp 
+<img src="https://www.logolynx.com/images/logolynx/af/af1312d4a873b69ffbd9597b78a14703.png" height="50px" width="70px"></span>
+	
+        </br></br>
+        <span id="fecha_actual"></span></br>
+            <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
     </body>
 </html>
